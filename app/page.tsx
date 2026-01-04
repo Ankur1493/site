@@ -45,11 +45,11 @@ export default function Home() {
         <div className="text-gray-800 text-2xl font-light flex flex-col items-start gap-4">
           {/* App Images - Tilted and Mashed Up, on the right side of text */}
           <div className="flex items-center gap-3 flex-wrap">
-            <p className="pr-3">
+            <p className="pr-1">
               I am currently working as a contractor at
             </p>
-            <div className="group flex items-center relative app-image-container cursor-pointer">
-              <div className="relative z-0 app-image-item transition-all duration-500 ease-out -ml-2 sm:-ml-3 group-hover:ml-0 group-hover:mr-2">
+            <div className="group flex items-center gap-1 relative app-image-container cursor-pointer">
+              <div className="relative z-0 app-image-item transition-all duration-500 ease-out transform group-hover:-translate-x-3">
                 <div className="relative w-10 h-10  rounded-lg overflow-hidden transform rotate-[-8deg] transition-all duration-500 ease-out group-hover:rotate-[-3deg]">
                   <Image
                     src="/assets/outrank.jpg"
@@ -59,7 +59,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="relative z-0 -ml-2 sm:-ml-1 app-image-item transition-all duration-500 ease-out group-hover:ml-0 group-hover:mr-2">
+              <div className="relative z-0 app-image-item transition-all duration-500 ease-out transform group-hover:translate-x-3">
                 <div className="relative w-10 h-10  rounded-lg overflow-hidden transform rotate-[12deg] transition-all duration-500 ease-out group-hover:rotate-[7deg]">
                   <Image
                     src="/assets/kleo.jpeg"
