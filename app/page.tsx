@@ -44,23 +44,23 @@ export default function Home() {
         {/* Main Content */}
         <div className="text-gray-800 text-2xl font-light flex flex-col items-start gap-4">
           {/* App Images - Tilted and Mashed Up, on the right side of text */}
-          <div className="flex items-center gap-3 flex-wrap">
-            <p className="pr-1">
+          <div className="flex items-center gap-2 flex-wrap">
+            <p>
               I am currently working as a contractor at
             </p>
-            <div className="group flex items-center gap-1 relative app-image-container cursor-pointer">
-              <div className="relative z-0 app-image-item transition-all duration-500 ease-out transform group-hover:-translate-x-3">
-                <div className="relative w-10 h-10  rounded-lg overflow-hidden transform rotate-[-8deg] transition-all duration-500 ease-out group-hover:rotate-[-3deg]">
+            <div className="group flex items-center relative app-image-container cursor-pointer ml-3">
+              <div className="relative z-0 app-image-item transition-all duration-200 ease-out transform group-hover:-translate-x-3">
+                <div className="relative w-10 h-10  rounded-lg overflow-hidden transform rotate-[-12deg] transition-all duration-200 ease-out group-hover:rotate-0">
                   <Image
-                    src="/assets/outrank.jpg"
+                    src="/assets/outrank.avif"
                     alt="Outrank"
                     fill
                     className="object-cover"
                   />
                 </div>
               </div>
-              <div className="relative z-0 app-image-item transition-all duration-500 ease-out transform group-hover:translate-x-3">
-                <div className="relative w-10 h-10  rounded-lg overflow-hidden transform rotate-[12deg] transition-all duration-500 ease-out group-hover:rotate-[7deg]">
+              <div className="relative z-10 app-image-item transition-all duration-200 ease-out transform -ml-3 group-hover:translate-x-3">
+                <div className="relative w-10 h-10  rounded-lg overflow-hidden transform rotate-[15deg] transition-all duration-200 ease-out group-hover:rotate-0">
                   <Image
                     src="/assets/kleo.jpeg"
                     alt="Kleo"
@@ -71,44 +71,45 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-          <p className=" flex items-center gap-2 sm:gap-3 flex-wrap">
-            I also post regularly on these platforms
-            <div className="group flex gap-0.5 sm:gap-1 social-icons-container cursor-pointer">
-              <div className="relative w-6 h-6 sm:w-7 sm:h-7 rounded-md overflow-hidden social-icon-item transition-all duration-500 ease-out transform group-hover:-translate-x-2">
-                <div className="relative w-full h-full transform rotate-[-6deg] transition-all duration-500 ease-out group-hover:rotate-[-2deg]">
+          <div className="flex items-center gap-2 flex-wrap">
+            <p>
+              I also post regularly on these platforms
+            </p>
+            <div className="group flex social-icons-container cursor-pointer ml-4">
+              <div className="relative z-0 w-10 h-10 rounded-md overflow-hidden social-icon-item transition-all duration-200 ease-out transform group-hover:-translate-x-6">
+                <div className="relative w-full h-full transform rotate-[-10deg] transition-all duration-200 ease-out group-hover:rotate-0">
                   <Image
-                    src="/assets/outrank.jpg"
+                    src="/assets/outrank.avif"
                     alt="X"
                     fill
                     className="object-cover"
                   />
                 </div>
               </div>
-              <div className="relative w-6 h-6 sm:w-7 sm:h-7 rounded-md overflow-hidden social-icon-item transition-all duration-500 ease-out transform group-hover:-translate-x-1">
-                <div className="relative w-full h-full transform rotate-[8deg] transition-all duration-500 ease-out group-hover:rotate-[4deg]">
+              <div className="relative z-10 w-10 h-10 rounded-md overflow-hidden social-icon-item transition-all duration-200 ease-out transform -ml-3 group-hover:-translate-x-2">
+                <div className="relative w-full h-full transform rotate-[12deg] transition-all duration-200 ease-out group-hover:rotate-0">
                   <Image
-                    src="/assets/outrank.jpg"
+                    src="/assets/outrank.avif"
                     alt="Instagram"
                     fill
                     className="object-cover"
                   />
                 </div>
               </div>
-              <div className="relative w-6 h-6 sm:w-7 sm:h-7 rounded-md overflow-hidden social-icon-item transition-all duration-500 ease-out transform group-hover:translate-x-1">
-                <div className="relative w-full h-full transform rotate-[-4deg] transition-all duration-500 ease-out group-hover:rotate-[0deg]">
+              <div className="relative z-20 w-10 h-10 rounded-md overflow-hidden social-icon-item transition-all duration-200 ease-out transform -ml-3 group-hover:translate-x-2">
+                <div className="relative w-full h-full transform rotate-[-8deg] transition-all duration-200 ease-out group-hover:rotate-0">
                   <Image
-                    src="/assets/outrank.jpg"
+                    src="/assets/outrank.avif"
                     alt="TikTok"
                     fill
                     className="object-cover"
                   />
                 </div>
               </div>
-              <div className="relative w-6 h-6 sm:w-7 sm:h-7 rounded-md overflow-hidden social-icon-item transition-all duration-500 ease-out transform group-hover:translate-x-2">
-                <div className="relative w-full h-full transform rotate-[6deg] transition-all duration-500 ease-out group-hover:rotate-[2deg]">
+              <div className="relative z-30 w-10 h-10 rounded-md overflow-hidden social-icon-item transition-all duration-200 ease-out transform -ml-3 group-hover:translate-x-6">
+                <div className="relative w-full h-full transform rotate-[9deg] transition-all duration-200 ease-out group-hover:rotate-0">
                   <Image
-                    src="/assets/outrank.jpg"
+                    src="/assets/outrank.avif"
                     alt="LinkedIn"
                     fill
                     className="object-cover"
@@ -116,7 +117,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </p>
+            </div>
 
           <p >
             Curious about my tech stack?{" "}
