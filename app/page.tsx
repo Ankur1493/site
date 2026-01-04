@@ -26,7 +26,7 @@ export default function Home() {
       <main className="flex flex-row items-center justify-center w-full max-w-[1300px] gap-20">
         <div className="flex flex-col items-start gap-6">
         {/* Header Section */}
-        <div>
+        <div className="mb-10">
           <h1 className="text-2xl leading-tight flex items-center gap-2">
             Hi, my name is <span className="font-semibold">Ankur Sharma</span>
             <div className="relative w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
@@ -76,23 +76,23 @@ export default function Home() {
               I also post regularly on these platforms
             </p>
             <div className="group flex social-icons-container cursor-pointer ml-4">
-              <div className="relative z-0 w-10 h-10 rounded-md overflow-hidden social-icon-item transition-all duration-200 ease-out transform group-hover:-translate-x-6">
+              <div className="relative z-0 w-10 h-10 social-icon-item transition-all duration-200 ease-out transform group-hover:-translate-x-6">
                 <div className="relative w-full h-full transform rotate-[-10deg] transition-all duration-200 ease-out group-hover:rotate-0">
                   <Image
-                    src="/assets/outrank.avif"
+                    src="/assets/x.jpg"
                     alt="X"
                     fill
-                    className="object-cover"
+                    className="object-cover rounded-md"
                   />
                 </div>
               </div>
-              <div className="relative z-10 w-10 h-10 rounded-md overflow-hidden social-icon-item transition-all duration-200 ease-out transform -ml-3 group-hover:-translate-x-2">
+              <div className="relative z-10 w-10 h-10 social-icon-item transition-all duration-200 ease-out transform -ml-3 group-hover:-translate-x-2">
                 <div className="relative w-full h-full transform rotate-[12deg] transition-all duration-200 ease-out group-hover:rotate-0">
                   <Image
-                    src="/assets/outrank.avif"
+                    src="/assets/instagram.svg"
                     alt="Instagram"
                     fill
-                    className="object-cover"
+                    className="object-cover rounded-md"
                   />
                 </div>
               </div>
@@ -106,13 +106,13 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="relative z-30 w-10 h-10 rounded-md overflow-hidden social-icon-item transition-all duration-200 ease-out transform -ml-3 group-hover:translate-x-6">
+              <div className="relative z-30 w-10 h-10 social-icon-item transition-all duration-200 ease-out transform -ml-3 group-hover:translate-x-6">
                 <div className="relative w-full h-full transform rotate-[9deg] transition-all duration-200 ease-out group-hover:rotate-0">
                   <Image
-                    src="/assets/outrank.avif"
+                    src="/assets/linkedin.jpeg"
                     alt="LinkedIn"
                     fill
-                    className="object-cover"
+                    className="object-cover rounded-md"
                   />
                 </div>
               </div>
