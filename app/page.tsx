@@ -71,7 +71,7 @@ export default function Home() {
             <div className="group flex items-center relative app-image-container cursor-pointer ml-2">
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <Link href="https://outrank.so/" target="_blank" rel="noopener noreferrer" className="relative z-0 app-image-item transition-all duration-200 ease-out transform group-hover:-translate-x-3">
+                  <Link href="https://outrank.so/" target="_blank" rel="noopener noreferrer" className="relative z-0 app-image-item transition-all duration-200 ease-out transform group-hover:-translate-x-2">
                     <div className="relative w-10 h-10  rounded-lg overflow-hidden transform rotate-[-12deg] transition-all duration-200 ease-out group-hover:rotate-0">
                       <Image
                         src="/assets/outrank.avif"
@@ -88,7 +88,7 @@ export default function Home() {
               </Tooltip>
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <Link href="https://kleo.so/" target="_blank" rel="noopener noreferrer" className="relative z-10 app-image-item transition-all duration-200 ease-out transform -ml-3 group-hover:translate-x-3">
+                  <Link href="https://kleo.so/" target="_blank" rel="noopener noreferrer" className="relative z-10 app-image-item transition-all duration-200 ease-out transform -ml-3 group-hover:translate-x-2">
                     <div className="relative w-10 h-10  rounded-lg overflow-hidden transform rotate-[15deg] transition-all duration-200 ease-out group-hover:rotate-0">
                       <Image
                         src="/assets/kleo.jpeg"
@@ -221,7 +221,7 @@ export default function Home() {
           </p>
           <p className="text-base sm:text-lg">
             Want to say hi?{" "}
-            <a href="#" className="text-blue-600 hover:underline">
+            <a href="mailto:ankursharma1493@gmail.com" className="text-blue-600 hover:text-purple-600">
               Click here.
             </a>
           </p>
