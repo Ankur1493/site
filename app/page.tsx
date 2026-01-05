@@ -29,7 +29,7 @@ export default function Home() {
         <div className="flex flex-col items-start gap-6">
         {/* Header Section */}
         <div className="mb-10">
-          <h1 className="text-2xl font-light flex items-center gap-2">
+          <h1 className="text-2xl text-black flex items-center gap-2">
             Hi 👋, I'm Ankur Sharma
             <div className="relative w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
               <Image
@@ -46,7 +46,7 @@ export default function Home() {
         {/* Main Content */}
         <div className="text-2xl  flex flex-col items-start gap-4">
              {/* App Images - Tilted and Mashed Up, on the right side of text */}
-             <div className="text-2xl font-light flex items-center gap-2 flex-wrap">
+             <div className="text-2xl text-black flex items-center gap-2 flex-wrap">
             <span>I am building</span>
             <Tooltip>
               <TooltipTrigger asChild>
@@ -66,7 +66,7 @@ export default function Home() {
             <span className="text-indigo-500 hover:text-indigo-600"><a href="http://x.com/rohangilkes/" target="_blank"> Rohan Gilkes</a></span>
           </div>
           {/* App Images - Tilted and Mashed Up, on the right side of text */}
-          <div className="text-2xl font-light flex items-center gap-2 flex-wrap">
+          <div className="text-2xl text-black flex items-center gap-2 flex-wrap">
             <span>I am working as a contractor at</span>
             <div className="group flex items-center relative app-image-container cursor-pointer ml-2">
               <Tooltip>
@@ -105,7 +105,7 @@ export default function Home() {
               </Tooltip>
             </div>
           </div>
-          <div className="text-2xl font-light flex items-center gap-2 flex-wrap mt-10">
+          <div className="text-2xl text-black flex items-center gap-2 flex-wrap mt-10">
             <span>I also post regularly on these platforms</span>
             <div className="group flex social-icons-container cursor-pointer ml-5">
               <Tooltip>
@@ -203,7 +203,7 @@ export default function Home() {
         </div>
 
         {/* Separator */}
-        <div className="w-full border-t border-dotted border-gray-300 my-10"></div>
+        <div className="w-full border-t border-dotted border-gray-300 my-3"></div>
 
         {/* Call to Action Section */}
         <div className="flex flex-col items-start gap-3">
