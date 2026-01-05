@@ -1,9 +1,11 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip";
 
 export default function Home() {
   const [email, setEmail] = useState("");
@@ -27,8 +29,8 @@ export default function Home() {
         <div className="flex flex-col items-start gap-6">
         {/* Header Section */}
         <div className="mb-10">
-          <h1 className="text-2xl leading-tight flex items-center gap-2">
-            Hi, my name is <span className="font-semibold">Ankur Sharma</span>
+          <h1 className="text-2xl font-light flex items-center gap-2">
+            Hi 👋, I'm Ankur Sharma
             <div className="relative w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
               <Image
                 src="/assets/profile.jpg"
@@ -42,108 +44,141 @@ export default function Home() {
         </div>
 
         {/* Main Content */}
-        <div className="text-gray-800 text-2xl font-light flex flex-col items-start gap-4">
+        <div className="text-2xl  flex flex-col items-start gap-4">
              {/* App Images - Tilted and Mashed Up, on the right side of text */}
-             <div className="flex items-center gap-2 flex-wrap">
-            <p>
-              I am building 
-            </p>
-            <div className="group flex items-center relative app-image-container cursor-pointer">
-              <div className="relative z-0 app-image-item transition-all duration-200 ease-out transform group-hover:-translate-x-0.5">
-                <div className="relative w-10 h-10  rounded-lg overflow-hidden transform rotate-[-12deg] transition-all duration-200 ease-out group-hover:rotate-0">
-                  <Image
-                    src="/assets/outrank.avif"
-                    alt="Outrank"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-            <p className="text-blue-600 hover:text-purple-600"><a href="http://x.com/rohangilkes/" target="_blank">with Rohan Gilkes</a></p>
+             <div className="text-2xl font-light flex items-center gap-2 flex-wrap">
+            <span>I am building</span>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Link href="https://shyftwork.com/" target="_blank" rel="noopener noreferrer" className="group flex items-center relative app-image-container cursor-pointer">
+                  <div className="relative z-0 app-image-item transition-all duration-200 ease-out transform group-hover:-translate-x-0.5">
+                    <div className="relative w-10 h-10 bg-indigo-500 rounded-md flex items-center justify-center transform rotate-[-12deg] transition-all duration-200 ease-out group-hover:rotate-0">
+                      <span className="text-white font-bold text-2xl">S</span>
+                    </div>
+                  </div>
+                </Link>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Shyft</p>
+              </TooltipContent>
+            </Tooltip>
+            <span>with</span>
+            <span className="text-indigo-500 hover:text-indigo-600"><a href="http://x.com/rohangilkes/" target="_blank"> Rohan Gilkes</a></span>
           </div>
           {/* App Images - Tilted and Mashed Up, on the right side of text */}
-          <div className="flex items-center gap-2 flex-wrap">
-            <p>
-              I am working as a contractor at
-            </p>
+          <div className="text-2xl font-light flex items-center gap-2 flex-wrap">
+            <span>I am working as a contractor at</span>
             <div className="group flex items-center relative app-image-container cursor-pointer ml-2">
-              <div className="relative z-0 app-image-item transition-all duration-200 ease-out transform group-hover:-translate-x-3">
-                <div className="relative w-10 h-10  rounded-lg overflow-hidden transform rotate-[-12deg] transition-all duration-200 ease-out group-hover:rotate-0">
-                  <Image
-                    src="/assets/outrank.avif"
-                    alt="Outrank"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-              <div className="relative z-10 app-image-item transition-all duration-200 ease-out transform -ml-3 group-hover:translate-x-3">
-                <div className="relative w-10 h-10  rounded-lg overflow-hidden transform rotate-[15deg] transition-all duration-200 ease-out group-hover:rotate-0">
-                  <Image
-                    src="/assets/kleo.jpeg"
-                    alt="Kleo"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <Link href="https://outrank.so/" target="_blank" rel="noopener noreferrer" className="relative z-0 app-image-item transition-all duration-200 ease-out transform group-hover:-translate-x-3">
+                    <div className="relative w-10 h-10  rounded-lg overflow-hidden transform rotate-[-12deg] transition-all duration-200 ease-out group-hover:rotate-0">
+                      <Image
+                        src="/assets/outrank.avif"
+                        alt="Outrank"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </Link>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Outrank</p>
+                </TooltipContent>
+              </Tooltip>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <Link href="https://kleo.so/" target="_blank" rel="noopener noreferrer" className="relative z-10 app-image-item transition-all duration-200 ease-out transform -ml-3 group-hover:translate-x-3">
+                    <div className="relative w-10 h-10  rounded-lg overflow-hidden transform rotate-[15deg] transition-all duration-200 ease-out group-hover:rotate-0">
+                      <Image
+                        src="/assets/kleo.jpeg"
+                        alt="Kleo"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </Link>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Kleo</p>
+                </TooltipContent>
+              </Tooltip>
             </div>
           </div>
-          <div className="flex items-center gap-2 flex-wrap">
-            <p>
-              I also post regularly on these platforms
-            </p>
-            <div className="group flex social-icons-container cursor-pointer ml-4.5">
-              <div className="relative z-0 w-10 h-10 social-icon-item transition-all duration-200 ease-out transform group-hover:-translate-x-6">
-                <div className="relative w-full h-full transform rotate-[-10deg] transition-all duration-200 ease-out group-hover:rotate-0">
-                  <Image
-                    src="/assets/x.jpg"
-                    alt="X"
-                    fill
-                    className="object-cover rounded-md"
-                  />
-                </div>
-              </div>
-              <div className="relative z-10 w-10 h-10 social-icon-item transition-all duration-200 ease-out transform -ml-3 group-hover:-translate-x-2">
-                <div className="relative w-full h-full transform rotate-[12deg] transition-all duration-200 ease-out group-hover:rotate-0">
-                  <Image
-                    src="/assets/instagram.svg"
-                    alt="Instagram"
-                    fill
-                    className="object-cover rounded-md"
-                  />
-                </div>
-              </div>
-              <div className="relative z-20 w-10 h-10 rounded-md overflow-hidden social-icon-item transition-all duration-200 ease-out transform -ml-3 group-hover:translate-x-2">
-                <div className="relative w-full h-full transform rotate-[-8deg] transition-all duration-200 ease-out group-hover:rotate-0">
-                  <Image
-                    src="/assets/outrank.avif"
-                    alt="TikTok"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-              <div className="relative z-30 w-10 h-10 social-icon-item transition-all duration-200 ease-out transform -ml-3 group-hover:translate-x-6">
-                <div className="relative w-full h-full transform rotate-[9deg] transition-all duration-200 ease-out group-hover:rotate-0">
-                  <Image
-                    src="/assets/linkedin.jpeg"
-                    alt="LinkedIn"
-                    fill
-                    className="object-cover rounded-md"
-                  />
-                </div>
-              </div>
+          <div className="text-2xl font-light flex items-center gap-2 flex-wrap mt-10">
+            <span>I also post regularly on these platforms</span>
+            <div className="group flex social-icons-container cursor-pointer ml-5">
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <Link href="https://x.com/ankursharma1493" target="_blank" rel="noopener noreferrer" className="relative z-0 w-10 h-10 social-icon-item transition-all duration-200 ease-out transform group-hover:-translate-x-6">
+                    <div className="relative w-full h-full transform rotate-[-10deg] transition-all duration-200 ease-out group-hover:rotate-0">
+                      <Image
+                        src="/assets/x.jpg"
+                        alt="X"
+                        fill
+                        className="object-cover rounded-md"
+                      />
+                    </div>
+                  </Link>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>@ankursharma1493</p>
+                </TooltipContent>
+              </Tooltip>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <Link href="https://www.instagram.com/ankur.sharma.03/#" target="_blank" rel="noopener noreferrer" className="relative z-10 w-10 h-10 social-icon-item transition-all duration-200 ease-out transform -ml-3 group-hover:-translate-x-2">
+                    <div className="relative w-full h-full transform rotate-[12deg] transition-all duration-200 ease-out group-hover:rotate-0">
+                      <Image
+                        src="/assets/instagram.svg"
+                        alt="Instagram"
+                        fill
+                        className="object-cover rounded-md"
+                      />
+                    </div>
+                  </Link>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>@ankur.sharma.03</p>
+                </TooltipContent>
+              </Tooltip>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <Link href="https://linkedin.com/in/ankursharma14" target="_blank" rel="noopener noreferrer" className="relative z-20 w-10 h-10 rounded-md overflow-hidden social-icon-item transition-all duration-200 ease-out transform -ml-3 group-hover:translate-x-2">
+                    <div className="relative w-full h-full transform rotate-[-8deg] transition-all duration-200 ease-out group-hover:rotate-0">
+                        <Image
+                        src="/assets/linkedin.jpeg"
+                        alt="LinkedIn"
+                        fill
+                        className="object-cover rounded-md"
+                      />
+                    </div>
+                  </Link>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>ankursharma14</p>
+                </TooltipContent>
+              </Tooltip>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <Link href="https://www.youtube.com/@ankur14" target="_blank" rel="noopener noreferrer" className="relative z-30 w-10 h-10 social-icon-item transition-all duration-200 ease-out transform -ml-3 group-hover:translate-x-6">
+                    <div className="relative w-full h-full transform rotate-[9deg] transition-all duration-200 ease-out group-hover:rotate-0">
+                                    <Image
+                        src="/assets/youtube.png"
+                        alt="YouTube"
+                        fill
+                        className="object-cover rounded-md"
+                      />
+                    </div>
+                  </Link>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>@ankur14</p>
+                </TooltipContent>
+              </Tooltip>
             </div>
             </div>
 
-          <p >
-            Curious about my tech stack?{" "}
-            <a href="#" className="text-blue-600 hover:underline">
-              Click here.
-            </a>
-          </p>
         </div>
 
         {/* Newsletter Section */}
